@@ -10,20 +10,60 @@
 <body>
   <style>
     body {
+    background-image: url(anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, sans-serif;
+    
     margin: 0;
     padding: 0;
 }
+@media screen and(max-width:768px)
+    {
+        body{
+            width: 100%;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        i{
+           width: auto;
+            font-size:small;
+            height: auto;
+        }
+    }
 
 header {
-    background-color: #f2f2f2;
+    background-color: #f2f2f256;
+    backdrop-filter: blur(2px);
     text-align: center;
     padding: 20px;
 }
 
 h1 {
     margin: 0;
+    animation: kunal 2ms linear infinite;
 }
+p{
+    margin: 0;
+    animation: web 2s linear infinite;
+}
+
+@keyframes web{
+    from{text-shadow:0 0 10px lime;
+    color: white;}
+    to{text-shadow: 0 0 10px blue;
+    color: white;}
+}
+@keyframes kunal{
+    from{text-shadow:0 0 10px lime;
+    color: white;}
+    to{text-shadow: 0 0 10px blue;
+    color: white;}
+}
+
+
+    
 
 p {
     margin: 5px 0;
@@ -31,17 +71,35 @@ p {
 
 section {
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #ffffff25;
+    backdrop-filter: blur(3px);
 }
 
 #about, #portfolio, #contact {
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    color: white;
 }
+.project a{
+    text-decoration: none;
+    color: white;
+    animation: clickme 2500ms linear infinite;
+}
+@keyframes clickme{
+    0%{
+    border-radius: 5px;
+color:white}
+25%{
+    border-radius: 5px;
+color:blue}
+}
+
+
 
 .project {
     margin: 20px 0;
     border: 1px solid #e0e0e0;
     padding: 10px;
+    color: white;
 }
 
 img {
@@ -52,6 +110,11 @@ img {
     color: gray;
     text-decoration: none;
 }
+
+    i{
+        margin: 5px;
+        padding: 15px;
+    }
 
   </style>
     <header>
@@ -65,8 +128,8 @@ img {
           </p><br>
           <p style="color:black; font:bolder;"><h4>Skills</h4> 
            <div class="project"> <i class="fa fa-html5" aria-hidden="true" style="background-color: orangered; padding: 4px;color: white;">HTML5</i>
-            <br> <i class="fa fa-css3" aria-hidden="true" style="background-color: rgb(49, 197, 255);padding: 4px; color: white;">CSS3</i><br>
-            <i style="background-color: yellowgreen; padding: 4px; color: white; font-family: sans-serif;">Js Javasript</i><br><i style="background-color: rgb(77, 6, 243); padding: 4px; color: white;">{B}Bootstrap5</i><i style="background-color:lightblue;padding: 4px; color: white;">C programming</i></p></div>
+            <i class="fa fa-css3" aria-hidden="true" style="background-color: rgb(49, 197, 255);padding: 4px; color: white;">CSS3</i>
+            <i style="background-color: yellowgreen; padding: 4px; color: white; font-family: sans-serif;"> Javasript</i><i style="background-color: rgb(77, 6, 243); padding: 4px; color: white;">{B}Bootstrap5</i><i style="background-color:lightblue;padding: 4px; color: white;">C programming</i></p></div>
     </section>
     <section id="portfolio">
         <h2>Projects</h2>
