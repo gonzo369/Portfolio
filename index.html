@@ -19,12 +19,13 @@
     margin: 0;
     padding: 0;
 }
-@media screen and(max-width:768px)
+@media screen and (max-width:600px)
     {
         body{
             width: 100%;
             font-size: 14px;
             box-sizing: border-box;
+            color: black;
         }
         i{
            width: auto;
@@ -109,15 +110,34 @@ img {
     max-width: 100%;
     height: auto;
 }
-.gmail{
-    color: gray;
-    text-decoration: none;
-}
+
 
     i{
         margin: 5px;
         padding: 15px;
     }
+    .fa-instagram{
+        background-color: black;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  
+        border-radius: 50%;
+        box-shadow: 0 0 3px;
+    }
+    .fa-github{
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0 0 3px;
+    }
+    .fa-snapchat{
+        background-color: black;
+        border-radius: 50%;
+        box-shadow: 0 0 3px;
+        animation: rao 4px linear  infinite;
+    }
+    
 
   </style>
     <header>
@@ -130,10 +150,18 @@ img {
 >
             Hello! I am a web developer passionate about creating beautiful and functional websites.
           </p1><br>
-          <p style="color:black; font:bolder;"><h4>Skills</h4> 
-           <div class="project"> <i class="fa fa-html5" aria-hidden="true" style="background-color: orangered; padding: 4px;color: white;">HTML5</i>
+          <p><h4>Education</h4></p>
+          <div class="project">
+            <p1><b>Computer Science Engineering :- </b>UI|AI Database with Apache+Nginx</p1>
+          </div>
+          <div class="project">
+              <p style="color:black; font:bolder;"><h4>Skills</h4> 
+            <div class="project">
+             <i class="fa fa-html5" aria-hidden="true" style="background-color: orangered; padding: 4px;color: white;">HTML5</i>
             <i class="fa fa-css3" aria-hidden="true" style="background-color: rgb(49, 197, 255);padding: 4px; color: white;">CSS3</i>
             <i style="background-color: yellowgreen; padding: 4px; color: white; font-family: sans-serif;"> JavaScript</i><i style="background-color: rgb(77, 6, 243); padding: 4px; color: white;">{B}Bootstrap5</i><i style="background-color:lightblue;padding: 4px; color: white;">C programming</i></p></div>
+            <h4>Opreting System</h4>
+        <div class="project" style="backdrop-filter: blur(50px);"><b style="color:blue;">Windows :- </b> Win 7,10,11 | <b style="color: red;">Linux :- </b>Kali Linux , Arch linux        </div></div>
     </section>
     <section id="portfolio">
         <h2>Projects</h2>
@@ -152,7 +180,9 @@ img {
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <a class="gmail" href="mailto:itsarthur563@gmail.com">kunalshakywar@gmail.com</a>
+        <a href="https://www.instagram.com/kunalshakywar_/"><i class="fa fa-instagram" style="color:white;" aria-hidden="true"></i></a>
+        <a href="https://github.com/gonzo369"><i class="fa fa-github" style="color: white;" aria-hidden="true"></i></a>
+        <a href="https://web.snapchat.com/"><i class="fa fa-snapchat" style="color: yellow;" aria-hidden="true"></i></a>
     </section>
 </body>
 </html>
