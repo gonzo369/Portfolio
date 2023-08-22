@@ -40,7 +40,12 @@ header {
     backdrop-filter: blur(2px);
     text-align: center;
     padding: 20px;
+    animation: line2 2s linear infinite;
 }
+@keyframes line2{
+        from{border-bottom: 1px solid lime; }
+        to{border-bottom:1px solid red}
+    }
 
 h1 {
     margin: 0;
@@ -139,7 +144,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         box-shadow: 0 0 3px;
         animation: rao 4px linear  infinite;
     }
-    
+    #contact{
+background-color: #f2f2f256;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    padding: 10px;
+    animation: line 2s linear infinite;
+    }    
+    @keyframes line{
+        from{border-top: 1px solid lime; }
+        to{border-top:1px solid red}
+    }
 
   </style>
     <header>
@@ -158,13 +173,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
           </div>
           <div class="project">
               <p style="color:black; font:bolder;"><h4>Skills</h4> 
-            <ul class="project">
-             <b class="fa fa-html5" aria-hidden="true" style="background-color: orangered; padding: 4px;color: white;">HTML5</b>
-            <b class="fa fa-css3" aria-hidden="true" style="background-color: rgb(49, 197, 255);padding: 4px; color: white;">CSS3</b>
-            <b style="background-color: yellowgreen; padding: 3px; color: white; font-family: sans-serif;"> JavaScript</b><b style="background-color: rgb(77, 6, 243); padding: 4px; color: white;">{B}Bootstrap5</b><br><b style="background-color:lightblue;padding: 4px; color: white; margin:px;">C programming</b></p></div>
-            <h4>Opreting System</h4>
-        <div class="project" style="backdrop-filter: blur(50px);"><b style="color:blue;">Windows :- </b> Win 7,10,11 | <b style="color: red;">Linux :- </b>Kali Linux , Arch linux        </div></div>
-    </section>
+            <div class="project">
+                <div class="project">
+                    <b class="fa fa-html5" aria-hidden="true" style="background-color: orangered; padding: 4px;color: white;">HTML5</b>
+                    <b class="fa fa-css3" aria-hidden="true" style="background-color: rgb(49, 197, 255);padding: 4px; color: white;">CSS3</b>
+                    <b style="background-color: yellowgreen; padding: 3px; color: white; font-family: sans-serif;"> JavaScript</b><b style="background-color: rgb(77, 6, 243); padding: 4px; color: white;">{B}Bootstrap5</b><br><b style="background-color:lightblue;padding: 4px; color: white; margin:px;">C programming</b></p>
+                </div>
+                    <h4>Opreting System</h4>
+                <div class="project" style="backdrop-filter: blur(50px);"><b style="color:blue;">Windows :- </b> Win 7,10,11 | <b style="color: red;">Linux :- </b>Kali Linux , Arch linux        </div></div>
+            </div>
+            </section>
     <section id="portfolio">
         <h2>Projects</h2>
         <div class="project">
